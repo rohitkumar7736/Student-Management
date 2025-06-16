@@ -1,0 +1,117 @@
+<body>
+   <style>
+      button, input[type="submit"], input[type="button"]
+       {
+          background-color:rgb(7,8,7);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+          font-size: 15px;
+          transition: 0.3s;     
+        } 
+         input[type=text] 
+         {
+          width: 100%;
+          padding: 10px 12px;
+          margin: 4px 0px;
+          box-sizing: border-box;
+          border-radius: 20px;
+          }
+        .img
+         {
+          background-image:url("{{url_for('static',filename='p10.jpg')}}");
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: transform 0.3s ease-in-out;
+         }
+          
+         
+         body 
+          {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+            background-color:#87e8e6;
+          }
+          .button-container
+          {
+          text-align: center;
+          margin-top: 25px;
+          }
+         .container 
+          {
+              width:  200px;
+              height: 200px; 
+              padding: 20px;
+              background-color:rgb(234, 162, 162);
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px rgba(183, 223, 141, 0.2);
+              text-align: center;
+              box-shadow: 10px 10px;
+          }
+          table
+    {
+    border-radius: 30px;
+          margin-top: 20px;
+          margin-left: 10px;
+        }
+     td
+     {
+      border: none;
+     }
+    th
+     {
+      border: none;
+    }   
+   .select
+      {
+   width: 100%;
+   padding: 10px 20px;
+   margin: 10x 0;
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 2px solid red;
+   border-radius: 10px;
+      }
+  </style>
+     <form action="/submit" method="POST">
+      <div class=container>
+        <label for="uname">Username</label>&nbsp;
+        <input type="text" id="uname" name="t1"><br><br>
+
+        <label for="pass">Password</label>&nbsp;
+        <input type="text" id="pass" name="t2"><br><br>
+
+        <button type="submit" value="Login" name="b1">Login</button>
+      </form>
+
+      </body>
+      <body class="img">
+      </div>
+    
+   <body>
+       <form name="f" method="POST" action="/submit">
+         
+       {% for col in data %}
+       {% if(col[0]==t1)and col[1]==t2 %}
+       <script>
+           
+          window.open("http://127.0.0.1:5000/menu")
+       </script>
+     
+       {%else%}
+       <script>
+          alert("Invalid id or password")
+       </script>
+       {% endif %}
+       {% endfor %}
+      </div>
+     </form>
+   </body>
+ 
+
+     

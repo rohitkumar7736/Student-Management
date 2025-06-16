@@ -1,0 +1,150 @@
+<body>
+<center>
+  <style>
+    button, input[type="submit"], input[type="button"]
+     {
+        background-color:rgb(7,8,7);
+        color: rgba(240, 244, 245, 0.89);
+        padding: 10px 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;     
+      } 
+       input[type=text] 
+       {
+             width: 200px;
+             height: 10px;
+             background: transparent;
+             border: 2px solid rgba(51, 3, 39, 0.2);
+             backdrop-filter: blur(40px);
+             box-shadow: 0 0 10px rgba(7, 6, 6, 0.637); 
+             border-radius: 20px; 
+             padding: 20px 30px;
+        }
+      .img
+       {
+        background-image:url("{{url_for('static',filename='p15.jpg')}}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform 0.3s ease-in-out;
+       }
+        
+       
+       body 
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; 
+          margin: 5;
+          background-color:#87e8e6;
+        }
+        .button-container
+        {
+        text-align: center;
+        margin-top: 25px;
+        }
+        .container
+        {
+                width: 400px;
+                height: 580px;
+                background: transparent;
+                border: 2px solid rgba(243, 11, 185, 0.2);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 0 10px rgba(7, 6, 6, 0.637); 
+                border-radius: 10px; 
+                padding: 30px 30px;
+        }
+        table
+  {
+  border-radius: 40px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+   td
+   {
+    border: none;
+   }
+  th
+   {
+    border: none;
+  }   
+ .select
+    {
+ width: 100%;
+ padding: 10px 20px;
+ margin: 10x 0;
+ box-sizing: border-box;
+ border: none;
+ border-bottom: 2px solid rgb(24, 123, 189);
+ border-radius: 10px;
+    }
+</style>
+
+  <form action="http://localhost:5003/submit"method="POST">
+    <div class=container>
+      <th colspan=2><h2>Teacher<h2></th>
+<table border=0>
+  <tr>
+    <th>Teacher Id</th>
+    <th><input type=text name=t1></th>
+  </tr>
+  <tr>
+    <th>Fname</th>
+    <th><input type=text name=t2></th>
+  </tr>
+  <tr>
+    <th>Lname</th>
+    <th><input type=text name=t3></th>
+  </tr>
+  <tr>
+    <th>Dob</th>
+    <th><input type=text name=t4></th>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <th><input type=text name=t5></th>
+  </tr>
+  <tr>
+    <th>Mobile</th>
+    <th><input type=text name=t6></th>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <th><input type=text name=t7></th>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <th><input type=text name=t8></th>
+  </tr>
+  <tr>
+    <td colspan=2>
+       <input type=button value="New">
+          <input type=submit name=b1 value="Save">
+            <input type=submit name=b1 value="Delete">
+              <input type=submit name=b1 value="Update">
+                 <input type=submit name=b1 value="Allsearch">
+                  <input type=submit name=b1 value="Psearch">
+  </tr>
+  <tr>
+    <body class="img">
+   <td><select name=s>
+  <option value="Teacher_id">Teacher_ID</option>
+  <option value="Fname">Fname</option>
+  <option value="Lname">Lname</option>
+  <option value="Dob">Dob</option>
+  <option value="phone">Phone</option>
+  <option value="mobile">Mobile</option>
+  <option value="status">Status</option>
+  <option value="address">Address</option>
+  <option value="All">Allsearch
+  </select>
+  <input type=text name=src>
+  <button type=submit value="specialsearch" name=b1>special search</button>
+    </td>
+  </tr>
+</div>
+  </body>
+</html>

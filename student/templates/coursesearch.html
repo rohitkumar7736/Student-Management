@@ -1,0 +1,22 @@
+<body>
+    <table border=2>
+       <tr>
+            <th>Course_Id</th>
+            <th>Name</th>
+            <th>Desc1</th>
+            <th>Grade_id</th>
+       </tr>
+       {% for col in data %}
+                <tr>
+                    <td>{{col[0]}}</td>
+                    <td>{{col[1]}}</td>
+                    <td>{{col[2]}}</td>
+                    <td>{{col[3]}}</td>
+                    <td>{{col[4]}}</td>
+                </tr>
+        {% endfor %}
+        <input type=button value="print" onclick=window.prompt()>
+     </body>
+    </table>
+</body>
+</html>

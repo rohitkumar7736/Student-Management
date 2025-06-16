@@ -1,0 +1,45 @@
+<body>
+<center>
+<table border=2>
+  <form action="/submit"method="POST">
+<table>
+  <tr>
+    <th>Teacher_Id</th>
+    <th><input type=text name=t1></th>
+  </tr>
+  <tr>
+    <th>Fname</th>
+    <th><input type=text name=t2></th>
+  </tr>
+  <tr>
+    <th>Lname</th>
+    <th><input type=text name=t3></th>
+  </tr>
+  <tr>
+    <th>Dob</th>
+    <th><input type=text name=t4></th>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <th><input type=text name=t5></th>
+  </tr>
+  <tr>
+    <th>Mobile</th>
+    <th><input type=text name=t6></th>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <th><input type=text name=t7></th>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <th><input type=text name=t8></th>
+  </tr>
+  <tr>
+    <th colspan=2>
+    <input type=button value="New">
+    <input type=submit name=b1 value="Save">
+    </th>
+  </tr>
+  </body>
+</html>
